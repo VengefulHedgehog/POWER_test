@@ -128,7 +128,9 @@
     <div class="wrapper">
         <div class="form__content">
             <div class="form__title">- LevelUp -</div>
-            <div class="form__timer"></div>
+            <div class="form__timer">
+                <p class="timer__display"></p>
+            </div>
             <div class="form__content__bottom">
                 <div class="form__product">
                     <img src="image/prod.png" alt="">
@@ -144,8 +146,11 @@
                         <option value="Выбвоаб Вабваоб">
                         <option value="Руслан"></option>
                     </datalist>
-                    <input type="tel" placeholder="Номер телефона: 89089083232" required  class="form__phone" pattern="[0-9]{11}">
-                    <button class="main__button">Заказать</button>
+                    <input type="tel" placeholder="Телефон: 89089083232" required list="phone"  class="form__phone" pattern="[0-9]{11}">
+                    <datalist  id="phone">
+                        <option value="89089083232"></option>
+                    </datalist>
+                    <button class="main__button order__button">Заказать</button>
                 </form>
             </div>
         </div>
